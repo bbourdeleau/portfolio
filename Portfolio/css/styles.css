@@ -1,0 +1,335 @@
+body,
+html {
+    max-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: black;
+
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+.welcome {
+    font-size: 2em;
+}
+
+.customSlide {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fill {
+    z-index: 2;
+    position: absolute;
+    color: black;
+    background-color: rgba(245, 245, 245, 0.6);
+    border-color: rgba(0, 0, 0, 0.6);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.fill:hover,
+.fill:focus {
+    color: white;
+    box-shadow: inset 0 0 0 2em var(--hover);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(245, 245, 245, 0.6);
+    transition: 0.5s;
+}
+
+.card-columns {
+    padding: 5%;
+
+    @include media-breakpoint-only(lg) {
+        column-count: 4;
+
+    }
+
+    @include media-breakpoint-only(xl) {
+        column-count: 5;
+    }
+}
+
+.bg-Ind {
+    background-color: #FC4CA1;
+}
+
+.bg-html {
+    background-color: #E54D26;
+}
+
+.bg-wordP {
+    background-color: #444;
+}
+
+.bg-sql {
+    background-color: #4479A1;
+}
+
+.bg-vue {
+    background-color: #3FB984;
+}
+
+.bg-bootstrap {
+    background-color: #7952B3;
+}
+
+.bg-image {
+    height: 100%;
+    color: white;
+    background-color: black;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url("images/img1.jpg");
+}
+
+.img2 {
+    background-image: url("images/img2.jpg");
+    padding-left: -15px;
+}
+
+.img3 {
+    background-image: url("images/img3.jpg")
+}
+
+.img4 {
+    background-image: url("images/img4.jpg")
+}
+
+p {
+    font-size: 0.8em;
+}
+
+.bgetp {
+    padding-top: 10%;
+    z-index: 1;
+    float: left;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    position: absolute;
+}
+
+.customDeck {
+    padding: 10%;
+    margin-left: 33%;
+    float: right;
+}
+
+.customCard {
+    margin-top: 50px;
+    margin-left: 35%;
+    max-width: 600px;
+}
+
+.carousel .carousel-inner {
+    background-color: #000000;
+}
+
+.carousel .item img {
+    max-height: 768px;
+    min-width: auto;
+}
+
+.card {
+
+    color: black;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.93);
+}
+
+h1 {
+    padding: 1%;
+}
+
+. h2 {
+    text-align: center;
+    font-size: 100%;
+}
+
+.scroll-downs {
+    position: fixed;
+    top: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    width: 34px;
+    height: 55px;
+}
+
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .customDeck {
+        padding: 0 auto;
+        margin: 50% auto;
+    }
+
+    .customCard {
+        margin: 0 auto;
+        padding-top: 20%;
+    }
+
+    .bgetp {
+        position: relative;
+    }
+
+    .bg-images {
+        background-repeat: repeat;
+        height: 250%;
+    }
+
+    .customSlide {
+        margin-top: 50%;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
